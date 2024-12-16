@@ -61,6 +61,8 @@ Enhanced captions are in the csv file [enhanced_captions.csv](https://drive.goog
 accelerate launch --multi_gpu --num_processes=8 qwen2_inference.py
 ```
 
+To enhance original captions without any trouble, you can simply plug-in new caption instead of old ones:
+
 ```python
 import pandas as pd
 dataframe = pd.read_csv("./data/enhanced_captions.csv")
