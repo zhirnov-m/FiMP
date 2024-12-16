@@ -56,7 +56,10 @@ for i, text in enumerate(samples["text"], start=1):
 
 ### Enhanced captions
 
-Enhanced captions are in the csv file [enhanced_captions.csv](https://drive.google.com/drive/folders/1hdeY1CT1fiLONqZTcS1jPhLI8QMBUWXD?usp=sharing). We ...
+Enhanced captions are in the csv file [enhanced_captions.csv](https://drive.google.com/drive/folders/1hdeY1CT1fiLONqZTcS1jPhLI8QMBUWXD?usp=sharing). To improve existing captions, we use Qwen2-vl 7b to provide better details for each item. At first, we caption all items given original prompt and the image itself to allow qwen improve existing captions. Secondly, we remove existing BLIP captions and find a better prompt to caption solely with qwen. The captioning requires transformers, qwen-vl-utils, accelerate libraries. Captioning runs with 
+```bash
+accelerate launch --multi_gpu --num_processes=8 qwen2_inference.py
+```
 
 ```python
 import pandas as pd
