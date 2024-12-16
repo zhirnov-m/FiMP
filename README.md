@@ -1,6 +1,6 @@
 # Fashion is My Profession (FiMP)
 
-**FiMP** -- Fashion product generator based on `Flux.1-[dev]` is a fine-tuned generative text-to-image generative model using [fashion product dataset](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions) collected on KREAM, one of the best online marketplaces in Korea.
+**FiMP** -- Fashion product generator based on `Flux.1-[dev]` is a fine-tuned generative text-to-image model using [fashion product dataset](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions) collected on KREAM, one of the best online marketplaces in Korea.
 
 We improved the original dataset image captions by replacing the BLIP model for automatic captioning with `Qwen2-VL-7B-Instruct`.
 
