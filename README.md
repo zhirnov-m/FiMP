@@ -23,7 +23,15 @@ Examples of generation by our best model ([Murmisov/Flux.1-dev-kream-lora-enhanc
 - `top, The Supreme x Stussy Oversized Cotton Black Hoodie, a photography of a black shirt with a hood on and a logo on the chest.`
 - `bottom, IAB Studio x Stussy Tie-Dye Sweat Wooven Shorts, a photography of a dye short pants with a logo.`
 
-### Installing Dependencies
+## Side-by-side method comparison
+
+We make a comparison with a previous [fashion design generator](https://github.com/hahminlew/fashion-product-generator) that was also fine-tuned on the same dataset. 
+
+By using a more advanced text-to-image model (`Flux.1-[dev]`) and an improved automatic captioning model (`Qwen2-VL-7B-Instruct`), our results look more realistic and attractive.
+
+![img](./assets/qualitative_results_comparison_349_1.png)
+
+## Installing Dependencies
 
 Please refer to [requirements.txt](./requirements.txt) for more details.
 ```bash
