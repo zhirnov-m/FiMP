@@ -1,0 +1,11 @@
+git+https://github.com/huggingface/diffusers.git
+accelerate>=0.31.0
+torchvision
+transformers>=4.41.2
+datasets
+ftfy
+tensorboard
+Jinja2
+peft>=0.11.1
+sentencepiece
+prodigyopt
